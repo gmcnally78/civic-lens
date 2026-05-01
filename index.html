@@ -57,26 +57,39 @@
       </section>
     
       
-      <h2>Breaking News</h2>
       <section id="breaking-news">
-        <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-          </p>
-          <video controls aria-label="Water management documentary">
-            <source src="videos/water-management.mp4" type="video/mp4">
-            <source src="videos/water-management.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
+        <h2>Breaking News</h2>
+      
+        <div class="breaking-grid">
+      
+          <article>
+            <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+      
+            <p>
+              The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
+            </p>
+      
+            <video controls aria-label="Water management documentary">
+              <source src="videos/water-management.mp4" type="video/mp4">
+              <source src="videos/water-management.ogg" type="video/ogg">
+            </video>
+          </article>
+      
+          <article>
+            <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+      
+            <p>
+              Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
+            </p>
+      
+            <video controls aria-label="Voter suppression documentary">
+              <source src="videos/voter-suppression.mp4" type="video/mp4">
+              <source src="videos/voter-suppression.ogg" type="video/ogg">
+            </video>
+          </article>
+      
+        </div>
       </section>
-      <section>
-        <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-          <video controls aria-label="Water management documentary">
-            <source src="videos/voter-suppression.mp4" type="video/mp4">
-            <source src="videos/voter-suppression.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
-      </section> 
       
       <article id="featured-articles">
       <h2>Featured Articles</h2>
@@ -136,40 +149,59 @@
           <p>Receive text messages with the news you want to know.</p>
       </section>
       <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
-        
-        <label for="name">Name <span class="required">*</span></label>
-          <input type="text" id="name" name="name" required>
-
-        <label for="phone">Mobile<span class="required">*</span></label>
-          <input type="tel" id="phone" name="phone" required>
-        
+        <div id="name-phone-input">
+          <div class="input">
+            <label for="name">Name<span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="input">
+            <label for="phone">Mobile<span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
           <fieldset>
-            <legend>Notification Preferences</legend>
-              <input type="checkbox" id="breakingnews" name="breakingnews" value="News">
-              <label for="breakingnews"> Breaking News</label><br>
-              
-              <input type="checkbox" id="politics" name="politics" value="Politics">
-              <label for="politics"> Politics</label><br>
-              
-              <input type="checkbox" id="weather" name="weather" value="Weather">
-              <label for="weather"> Weather</label><br>
-              
-              <input type="checkbox" id="sports" name="sports" value="Sports">
-              <label for="sports"> Sports</label><br>
-              
-              <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
-              <label for="entertainment"> Entertainment</label><br>
-              
-              <input type="checkbox" id="world" name="world" value="World">
-              <label for="world"> World</label><br>
-              
-              <input type="checkbox" id="financial" name="financial" value="Financial">
-              <label for="financial"> Financial</label><br>
-              
-              <br>
-              <input type="submit" value="Subscribe">
 
+            <!-- <div class="checkbox-item">
+                    <input type="checkbox" id="breakingnews" name="breakingnews" value="News">
+                    <label for="breakingnews">Breaking News</label>
+                  </div> -->
+            <legend>Notification Preferences</legend>
+            <div class="checkbox-item">
+              <input type="checkbox" id="breakingnews" name="breakingnews" value="News">
+              <label for="breakingnews"> Breaking News</label>
+            </div>
+
+            <div class="checkbox-item">
+              <input type="checkbox" id="politics" name="politics" value="Politics">
+              <label for="politics"> Politics</label>
+            </div>
+
+            <div class="checkbox-item">
+              <input type="checkbox" id="weather" name="weather" value="Weather">
+              <label for="weather"> Weather</label>
+            </div>
+            
+            <div class="checkbox-item">
+              <input type="checkbox" id="sports" name="sports" value="Sports">
+              <label for="sports"> Sports</label>
+            </div>
+
+            <div class="checkbox-item"> 
+              <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
+              <label for="entertainment"> Entertainment</label>
+            </div>
+            
+            <div class="checkbox-item">
+              <input type="checkbox" id="world" name="world" value="World">
+              <label for="world"> World</label>
+            </div>
+            
+            <div class="checkbox-item">
+              <input type="checkbox" id="financial" name="financial" value="Financial">
+              <label for="financial"> Financial</label> 
+            </div>             
           </fieldset>
+          <input type="submit" value="Subscribe">
       </form>
       </main>
       <footer id="social">
