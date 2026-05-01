@@ -295,15 +295,10 @@ fieldset {
   margin-bottom: 1rem;
 }
 
-/* fieldset {
-  padding: 1rem;
-  margin-top: 1rem;
-} */
-
 
 fieldset {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
@@ -435,12 +430,7 @@ p {
     display: block;
     border-radius: 0.5rem;
   }
-/* .mobile-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-} */
+
 
   /* hide mobile menu button */
   .menu-button {
@@ -454,10 +444,6 @@ p {
     margin-top: 1rem;
   }
 
-  /* .menu {
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
   .menu li {
     margin-bottom: 0;
@@ -480,8 +466,6 @@ p {
   /* form layout */
   form {
     display: block;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     gap: 1rem;
   }
   #name-phone-input {
@@ -497,6 +481,9 @@ p {
   input[type="submit"] {
     grid-column: 1 / -1;
   }
+  fieldset {
+  grid-template-columns: 1fr 1fr;
+}
 
 }
 
@@ -509,6 +496,9 @@ p {
 
   form {
     grid-template-columns: repeat(2, 1fr);
+  }
+  fieldset {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
